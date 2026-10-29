@@ -1,223 +1,245 @@
-HYB (Hatch Your Beta) · 产品发布与分发控制台
-🚀 为独立开发者与出海团队打造的多项目产品发布与增长分发工作台
+# HYB (Hatch Your Beta) · Product Launch & Growth Distribution Console
 
-Local-first · 数据不上传 · 无需登录 · 开箱即用
+> 🚀 A local-first, multi-project launch workspace for indie hackers and SaaS founders.
+>
+> **No login · No server upload · Zero dependencies · Ready to use**
 
-<p align="center"> <img src="https://img.shields.io/badge/version-12.0-black" alt="Version"> <img src="https://img.shields.io/badge/license-MIT-green" alt="License"> <img src="https://img.shields.io/badge/storage-localStorage-orange" alt="Storage"> <img src="https://img.shields.io/badge/i18n-中文%20%7C%20English-blue" alt="i18n"> <img src="https://img.shields.io/badge/dependencies-0-brightgreen" alt="Dependencies"> <img src="https://img.shields.io/badge/PRs-welcome-blueviolet" alt="PRs"> </p><p align="center"> <a href="https://hyb.vip/">🌐 在线体验</a> · <a href="#-功能特性">✨ 功能特性</a> · <a href="#-快速开始">⚡ 快速开始</a> · <a href="#-数据存储">💾 数据存储</a> · <a href="#-贡献指南">🤝 贡献指南</a> </p>
-📖 简介
-HYB 是一个单文件、零依赖、纯前端的产品发布与渠道分发控制台。
+**English** | [简体中文](./README.zh-CN.md)
 
-它将「发布物料管理」「500+ 获客渠道追踪」「冷启动进度记录」三件事整合到一个极简的本地工作台中。所有数据仅保存在你的浏览器 localStorage 中，不上传任何服务器，也无需登录。
+<p align="center">
+  <img src="https://img.shields.io/badge/version-12.0-black" alt="Version">
+  <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
+  <img src="https://img.shields.io/badge/storage-localStorage-orange" alt="Storage">
+  <img src="https://img.shields.io/badge/i18n-English%20%7C%20中文-blue" alt="i18n">
+  <img src="https://img.shields.io/badge/dependencies-0-brightgreen" alt="Dependencies">
+  <img src="https://img.shields.io/badge/PRs-welcome-blueviolet" alt="PRs">
+</p>
 
-打开即用，关闭即走，数据始终在你手里。
+<p align="center">
+  <a href="https://hyb.vip/">🌐 Live Demo</a> ·
+  <a href="#-features">✨ Features</a> ·
+  <a href="#-quick-start">⚡ Quick Start</a> ·
+  <a href="#-data-storage">💾 Data Storage</a> ·
+  <a href="#-contributing">🤝 Contributing</a>
+</p>
 
-适合人群：独立开发者 (Indie Hackers)、SaaS 创始人、出海团队、内容创作者、产品运营。
+---
 
-✨ 功能特性
-🗂 多项目物料库
-每个产品独立保存 产品名称 / 官网链接 / 一句话介绍 / 详细描述
+## 📖 Introduction
 
-一键复制单字段或整套物料
+**HYB** is a **single-file, zero-dependency, pure frontend** console for product launches and channel distribution.
 
-项目级折叠展开，支持无限多项目并行管理
+It brings three things together in one minimal local workspace:
 
-📊 数据概览面板
-存活外链数 / 渠道总数 / 已操作渠道 / 已收录渠道 实时统计
+- **Launch materials management** — keep your product copy ready to paste
+- **500+ acquisition channel tracking** — the full GTM distribution stack
+- **Cold start progress recording** — every placement, every date, every note
 
-按项目分行显示小计，一眼看清每个产品的推进情况
+All data is stored **only in your browser's `localStorage`**. Nothing is uploaded. No account required.
 
-自动本地保存，带时间戳提示
+Open it, use it, close it — your data stays with you.
 
-🎯 目标追踪 (OKR)
-支持 周 / 月 / 季度 / 年 四种周期
+> **Built for:** indie hackers, SaaS founders, global launch teams, content creators, and product marketers.
 
-每个项目独立设置目标分发数量
+---
 
-进度条 + 剩余天数 + 智能教练提示（根据不同状态给出不同建议）
+## ✨ Features
 
-自动按外链发布日期统计达成数量
+### 🗂 Multi-Project Materials Library
+- Each product keeps its own **name / website / tagline / description**
+- One-click copy for a single field or the entire material set
+- Collapsible project cards, unlimited projects in parallel
 
-🌐 增长渠道库 (500+ Channels)
-预置 500+ 真实获客渠道，涵盖：
+### 📊 Overview Dashboard
+- **Live Placements** / **Total Channels** / **Launched** / **Featured** — real-time stats
+- Per-project breakdown so you can see each product's progress at a glance
+- Auto-saved locally with a timestamp
 
-分类	示例
-AI 工具目录	There's An AI For That、Futurepedia、Toolify
-SaaS 软件评测	G2、Capterra、TrustRadius、GoodFirms
-产品发布创业	Product Hunt、BetaList、Indie Hackers、Uneed
-开发者技术	GitHub、Hacker News、Dev.to、Stack Overflow
-社交内容平台	X、LinkedIn、Reddit、Medium、YouTube
-社区推广	r/SideProject、r/indiehackers、Growth Hackers
-商业企业PR	Crunchbase、G2、Yelp、BBB
-搜索引擎	Google、Bing、Yandex、百度、Naver
-其他渠道	大量小众目录、AI 导航站、开发者社区
-每个渠道内置 DR 域名权重 数据，可按 DR 升降序排序；点击 DR 值可手动编辑。
+### 🎯 Goal Tracking (OKR)
+- Supports **weekly / monthly / quarterly / yearly** cycles
+- Independent target per project
+- Progress bar + days remaining + smart coach messages that adapt to your pace
+- Automatically counts placements by their launch date
 
-📋 分发进度管理
-对「渠道 × 项目」每个组合都可独立记录：
+### 🌐 500+ Growth Channels
+Pre-loaded with 500+ real acquisition channels, including:
 
-状态：待发布 → 已发布 → 已收录 / 被拒绝
+| Category | Examples |
+|----------|----------|
+| AI Tool Directories | There's An AI For That, Futurepedia, Toolify |
+| SaaS Reviews | G2, Capterra, TrustRadius, GoodFirms |
+| Launch & Startup | Product Hunt, BetaList, Indie Hackers, Uneed |
+| Developer Tools | GitHub, Hacker News, Dev.to, Stack Overflow |
+| Social & Content | X, LinkedIn, Reddit, Medium, YouTube |
+| Community Promotion | r/SideProject, r/indiehackers, Growth Hackers |
+| Business & PR | Crunchbase, G2, Yelp, BBB |
+| Search Engines | Google, Bing, Yandex, Baidu, Naver |
+| Other Channels | Tons of niche directories, AI navigators, dev communities |
 
-跟进日期：自动识别逾期并高亮
+Each channel ships with a **DR (Domain Rating)** value. Sort by DR ascending or descending, and click any DR value to edit it manually.
 
-上线地址：每条外链可记录 URL + 标题 + 发布日期
+### 📋 Distribution Progress
+For every **channel × project** combination, track:
 
-备注：为每条渠道写操作心得
+- **Status**: Pending → Launched → Featured / Rejected
+- **Follow-up date**: overdue rows are automatically highlighted
+- **Live URLs**: each placement can record URL + title + launch date
+- **Notes**: freeform notes per channel
 
-🔍 强大筛选与搜索
-按项目 / 分类 / 状态 / 费用 / 关键词筛选
+### 🔍 Powerful Filtering
+- Filter by project / category / status / fee / keyword
+- DR is a **sort dimension only** — it never filters
+- Channels are hidden when all their project rows are filtered out
 
-DR 单独作为排序维度，不参与筛选
+### 🌍 Bilingual UI
+- Switch between **English / 简体中文** instantly
+- Full i18n coverage, preference persisted automatically
 
-某渠道所有项目行被筛掉时自动隐藏
+### 💾 Import & Export
+- Export everything as a JSON backup
+- Import backups, migrate legacy data, support old V10 data structures
 
-🌍 双语界面
-简体中文 / English 一键切换
+### 🎨 Minimal Design
+- Clean black / white / grey aesthetic, no clutter
+- Responsive — works on desktop, tablet, and mobile
+- No CSS framework, no JS library
 
-界面文案完整 i18n，切换后自动持久化
+---
 
-💾 导入导出
-导出全部数据为 JSON 备份
+## ⚡ Quick Start
 
-支持导入备份、迁移旧版数据、旧版 V10 数据结构
+### Option 1: Use it online (recommended)
 
-🎨 极简设计
-黑白灰极简风格，无多余装饰
+👉 **[https://hyb.vip/](https://hyb.vip/)**
 
-响应式布局，桌面 / 平板 / 手机均可用
+### Option 2: Run locally
 
-零 CSS 框架依赖，无 JS 库依赖
-
-⚡ 快速开始
-方式一：在线使用（推荐）
-直接访问 👉 https://hyb.vip/
-
-方式二：本地运行
-bash
-# 克隆仓库
+```bash
+# Clone the repo
 git clone https://github.com/ffeeme/hyb.git
 cd hyb
 
-# 直接用浏览器打开 index.html
+# Open it in your browser
 open index.html          # macOS
 start index.html         # Windows
 xdg-open index.html      # Linux
-💡 由于使用 localStorage，建议通过本地服务器访问以获得完整体验：
+💡 Because the app uses localStorage, we recommend serving it through a local server:
 
 bash
-# 任选其一
+# Pick one
 python3 -m http.server 8080
 npx serve .
 php -S localhost:8080
-然后访问 http://localhost:8080。
+Then open http://localhost:8080.
 
-方式三：部署到静态托管
-本项目是单个 HTML 文件，可直接部署到：
+Option 3: Deploy to static hosting
+This project is a single HTML file — deploy it anywhere:
 
 ✅ Vercel / Netlify / Cloudflare Pages
 
 ✅ GitHub Pages
 
-✅ 任意静态服务器 / 对象存储
+✅ Any static server or object storage
 
-💾 数据存储
-HYB 采用 local-first 架构，所有数据均保存在你的浏览器中：
+💾 Data Storage
+HYB uses a local-first architecture. All data lives in your browser:
 
-Key	内容
-hyb_v12_platforms	渠道列表（含自定义渠道）
-hyb_v12_projects	项目物料库
-hyb_v12_progress	每个「渠道 × 项目」的进度记录
-hyb_v12_okr	每个项目独立的目标设置
-hyb_v12_lang	语言偏好
-hyb_v12_ui	界面折叠状态
-hyb_v12_saved_at	最后保存时间
-⚠️ 注意事项
-数据不会同步到任何服务器，仅存在于当前浏览器
+Key	Content
+hyb_v12_platforms	Channel list (including custom channels)
+hyb_v12_projects	Project materials
+hyb_v12_progress	Per channel × project progress
+hyb_v12_okr	Per-project goal settings
+hyb_v12_lang	Language preference
+hyb_v12_ui	UI collapse state
+hyb_v12_saved_at	Last saved timestamp
+⚠️ Important
+Data is never synced to any server — it stays in your current browser
 
-清除浏览器数据 / 更换设备 / 使用无痕模式 → 数据会丢失
+Clearing browser data / changing devices / incognito mode → data is lost
 
-强烈建议定期使用「导出」功能备份数据
+Back up regularly using the "Export" button
 
-不同浏览器 / 不同域名下的数据相互独立
+Data is isolated per browser and per domain
 
-🗺 路线图
-☑ 500+ 预置渠道库
-☑ 多项目物料管理
-☑ 多渠道 × 多项目进度矩阵
-☑ OKR 目标追踪
-☑ 双语界面
-☑ 数据导入导出
-☑ DR 权重排序与编辑
-□ 外链存活检测（自动 check 链接可达性）
-□ 数据可视化图表（按周/月趋势）
-□ 渠道推荐（根据产品类型推荐匹配渠道）
-□ PWA 离线安装
-□ 云端同步（可选账号）
-🤝 贡献指南
-我们欢迎任何形式的贡献！无论是：
+🗺 Roadmap
+☑ 500+ preloaded channels
+☑ Multi-project materials
+☑ Channel × project progress matrix
+☑ OKR goal tracking
+☑ Bilingual UI
+☑ JSON import / export
+☑ DR sorting & inline editing
+□ Live link health check
+□ Visual charts (weekly / monthly trends)
+□ Channel recommendations based on product type
+□ PWA offline install
+□ Optional cloud sync
+🤝 Contributing
+Contributions of any kind are welcome:
 
-🐛 报告 Bug
+🐛 Report bugs
 
-💡 提出新功能建议
+💡 Suggest new features
 
-📝 改进文档
+📝 Improve docs
 
-🔧 提交代码
+🔧 Submit code
 
-🧩 补充优质渠道到内置列表
+🧩 Add quality channels to the built-in list
 
-提交 PR 流程
+PR workflow
 bash
-# 1. Fork 本仓库
-# 2. 创建分支
+# 1. Fork this repo
+# 2. Create a branch
 git checkout -b feature/your-feature-name
 
-# 3. 提交改动
+# 3. Commit your changes
 git commit -m "feat: add your feature"
 
-# 4. 推送
+# 4. Push
 git push origin feature/your-feature-name
 
-# 5. 提交 Pull Request
-提交 Issue
-提交 Issue 前请先搜索是否已有相同问题。请包含：
+# 5. Open a Pull Request
+Opening an issue
+Please search for existing issues first. Include:
 
-问题描述
+Description of the problem
 
-复现步骤
+Steps to reproduce
 
-浏览器版本 / 操作系统
+Browser version / OS
 
-截图或录屏（如有）
+Screenshots or recordings (if applicable)
 
-添加渠道
-想为内置渠道库贡献新渠道？请编辑 index.html 中的 REAL_PLATFORMS 数组，确保：
+Adding a channel
+Want to contribute a channel to the built-in list? Edit the REAL_PLATFORMS array in index.html. Please ensure:
 
-name 唯一
+name is unique
 
-url 使用 https://
+url uses https://
 
-category 属于预设分类之一
+category is one of the preset categories
 
-如有 DR 数据，可补充到 PRELOADED_DR 对象
+Optionally add DR data to the PRELOADED_DR object
 
-📄 许可证
-本项目基于 MIT License 开源，可自由用于个人或商业项目。
+📄 License
+Released under the MIT License. Free for personal and commercial use.
 
-🔗 相关链接
-🌐 官网：https://hyb.vip/
+🔗 Links
+🌐 Website: https://hyb.vip/
 
-🐙 GitHub：https://github.com/ffeeme/hyb
+🐙 GitHub: https://github.com/ffeeme/hyb
 
-🐦 X (Twitter)：@xYCV8jRRrs4uBvC
+🐦 X (Twitter): @xYCV8jRRrs4uBvC
 
-📺 YouTube：@hyb-vip
+📺 YouTube: @hyb-vip
 
-📖 使用指南：https://www.hyb.vip/#faq
+📖 User Guide: https://www.hyb.vip/#faq
 
-🔒 隐私政策：https://www.hyb.vip/privacy-policy/
+🔒 Privacy Policy: https://www.hyb.vip/privacy-policy/
 
 ⭐ Star History
-如果这个项目对你有帮助，请给个 Star ⭐ 支持一下！
+If this project helps you, please give it a star ⭐ — it means a lot!
 
 <p align="center"> <a href="https://star-history.com/#ffeeme/hyb&Date"> <img src="https://api.star-history.com/svg?repos=ffeeme/hyb&type=Date" alt="Star History Chart"> </a> </p>
-<p align="center"> <strong>HYB · Hatch Your Beta</strong><br> <em>让每一次发布，都有迹可循。</em> </p><p align="center"> Made with 🖤 for indie hackers worldwide. </p>
+<p align="center"> <strong>HYB · Hatch Your Beta</strong><br> <em>Make every launch count.</em> </p><p align="center"> Made with 🖤 for indie hackers worldwide. </p> ```
