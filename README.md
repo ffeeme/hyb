@@ -4,7 +4,7 @@
 >
 > **No login · No server upload · Zero dependencies · Ready to use**
 
-**English** | [简体中文](./README.zh-CN.md)
+**English** | [简体中文](./blob/README.zh-CN.md)
 
 <p align="center">
   <img src="https://img.shields.io/badge/version-12.0-black" alt="Version">
